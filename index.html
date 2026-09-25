@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Bejawada Naga Varshini - Computer Science & Engineering Student, Aspiring Software Engineer, and AI Enthusiast." />
+  <meta name="keywords" content="Bejawada Naga Varshini, Portfolio, Computer Science, AI, Python, SQL, Generative AI, Dhanekula" />
+  <meta name="author" content="Bejawada Naga Varshini" />
+  
+  <title>Bejawada Naga Varshini | Portfolio</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background Ambient Glow Effects -->
+  <div class="glow-sphere sphere-1" aria-hidden="true"></div>
+  <div class="glow-sphere sphere-2" aria-hidden="true"></div>
+
+  <!-- ==================== HEADER & NAVBAR ==================== -->
+  <header class="navbar-wrapper">
+    <nav class="navbar container" aria-label="Main Navigation">
+      <a href="#home" class="nav-brand" aria-label="Home">
+        <span class="brand-monogram">NV</span>
+        <span class="brand-text">Varshini<span class="accent-dot">.</span></span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#journey" class="nav-link">Journey</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Action Buttons & Theme Switcher -->
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <!-- Sun Icon (shown in dark mode) -->
+          <svg class="theme-icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (shown in light mode) -->
+          <svg class="theme-icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="#contact" class="btn btn-sm btn-outline nav-contact-btn">Connect</a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle-btn" id="mobileMenuBtn" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main>
+    
+    <!-- 1. HERO SECTION -->
+    <section id="home" class="hero-section container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>B.Tech CSE &bull; 3rd Year (Expected 2028)</span>
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Bejawada Naga Varshini</span>
+        </h1>
+
+        <div class="hero-subtitle-wrapper">
+          <span class="static-prefix">I am an </span>
+          <span class="dynamic-typing" id="typingText"></span>
+          <span class="cursor">|</span>
+        </div>
+
+        <p class="hero-description">
+          Motivated Computer Science & Engineering student at <strong>Dhanekula Institute of Engineering and Technology</strong>. 
+          Driven by strong interests in <strong>Artificial Intelligence</strong>, <strong>Generative AI</strong>, <strong>Python</strong>, 
+          <strong>SQL</strong>, and <strong>Software Development</strong>. Focused on applying technical skills to impactful, real-world solutions.
+        </p>
+
+        <!-- Call to Action Buttons -->
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <span>View Projects</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <span>Get in Touch</span>
+          </a>
+        </div>
+
+        <!-- Social & Professional Links -->
+        <div class="hero-social-links">
+          <span class="social-label">Connect:</span>
+          
+          <!-- LinkedIn -->
+          <a href="https://linkedin.com/in/naga-varshini-bejawada-196a2934b" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn Profile">
+            <svg class="social-svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.6 1.6 0 1 0 0-3.2 1.6 1.6 0 0 0 0 3.2m1.4 9.74v-8.37H5.06v8.37h2.8z"/>
+            </svg>
+            <span>LinkedIn</span>
+          </a>
+
+          <!-- GitHub -->
+          <a href="https://github.com/bejawadanagavarshini007-code" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub Profile">
+            <svg class="social-svg" viewBox="0 0 24 24" fill="currentColor">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+            </svg>
+            <span>GitHub</span>
+          </a>
+
+          <!-- Direct Email -->
+          <a href="mailto:bejawadanagavarshini007@gmail.com" class="social-btn" title="Send Email">
+            <svg class="social-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>Email</span>
+          </a>
+        </div>
+
+        <!-- Highlights Strip -->
+        <div class="hero-stats-grid">
+          <div class="stat-card">
+            <span class="stat-number">3rd</span>
+            <span class="stat-label">Year B.Tech CSE</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">2028</span>
+            <span class="stat-label">Graduation Year</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">4+</span>
+            <span class="stat-label">Key Certifications</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">AI &amp; Dev</span>
+            <span class="stat-label">Core Focus</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT ME SECTION -->
+    <section id="about" class="section container">
+      <div class="section-header">
+        <span class="section-tag">Overview</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="about-grid">
+        <!-- Career Objective Card -->
+        <div class="glass-card about-main-card">
+          <div class="card-icon-header">
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+            </div>
+            <h3>Career Objective</h3>
+          </div>
+          <p class="about-text">
+            Motivated Computer Science and Engineering student with a strong interest in software development, Python, and Artificial Intelligence. 
+            Eager to apply programming and problem-solving skills through real-world projects and professional opportunities, 
+            while continuously improving technical and communication skills.
+          </p>
+          
+          <div class="location-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>Based in <strong>Gudivada, Andhra Pradesh</strong></span>
+          </div>
+        </div>
+
+        <!-- Strengths Card -->
+        <div class="glass-card strengths-card">
+          <div class="card-icon-header">
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+            <h3>Key Strengths</h3>
+          </div>
+          <ul class="strengths-list">
+            <li>
+              <span class="check-bullet">&check;</span>
+              <span><strong>Problem-solving mindset:</strong> Analytical thinking to break down challenges logically.</span>
+            </li>
+            <li>
+              <span class="check-bullet">&check;</span>
+              <span><strong>Hardworking and willing to learn:</strong> Eager to master emerging technologies and workflows.</span>
+            </li>
+            <li>
+              <span class="check-bullet">&check;</span>
+              <span><strong>Adaptable:</strong> Fast learner comfortable working with evolving tools and environments.</span>
+            </li>
+            <li>
+              <span class="check-bullet">&check;</span>
+              <span><strong>Team-oriented:</strong> Collaborative spirit committed to shared objectives and quality outcomes.</span>
+            </li>
+            <li>
+              <span class="check-bullet">&check;</span>
+              <span><strong>Continuous learner:</strong> Passionate about hands-on practice, tech certifications, and skills growth.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Career Interests Card -->
+        <div class="glass-card interests-card full-width-card">
+          <div class="card-icon-header">
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <h3>Career Interests</h3>
+          </div>
+          <div class="interests-pills">
+            <span class="pill pill-accent">Software Engineering</span>
+            <span class="pill pill-accent">Python Development</span>
+            <span class="pill pill-accent">Artificial Intelligence &amp; GenAI</span>
+            <span class="pill">Backend Development</span>
+            <span class="pill">Web Development</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. EDUCATION SECTION -->
+    <section id="education" class="section container">
+      <div class="section-header">
+        <span class="section-tag">Academics</span>
+        <h2 class="section-title">Education</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="education-card-wrapper">
+        <div class="glass-card education-card">
+          <div class="edu-top">
+            <div class="edu-institution-info">
+              <div class="edu-icon-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="edu-degree">B.Tech – Computer Science &amp; Engineering</h3>
+                <p class="edu-college">Dhanekula Institute of Engineering and Technology</p>
+              </div>
+            </div>
+            <div class="edu-timeline-badge">
+              <span>3rd Year &bull; Expected Graduation: 2028</span>
+            </div>
+          </div>
+
+          <div class="edu-details">
+            <h4 class="edu-subheading">Core Academic Focus &amp; Competencies:</h4>
+            <div class="edu-tags">
+              <span class="edu-tag">Data Structures &amp; Algorithms</span>
+              <span class="edu-tag">Object-Oriented Programming (OOP)</span>
+              <span class="edu-tag">Database Fundamentals &amp; SQL</span>
+              <span class="edu-tag">Computer Science Foundations</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SKILLS SECTION -->
+    <section id="skills" class="section container">
+      <div class="section-header">
+        <span class="section-tag">Technical Competencies</span>
+        <h2 class="section-title">Skills</h2>
+        <p class="section-subtitle">
+          Technologies and foundational areas I have learned and actively practiced.
+        </p>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Programming Languages -->
+        <div class="glass-card skill-category-card">
+          <div class="skill-category-header">
+            <div class="skill-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3>Programming</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-pill highlighted">
+              <span class="skill-name">Python</span>
+              <span class="skill-badge">Core Focus</span>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-name">C</span>
+              <span class="skill-badge">Foundational</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI & Emerging Tech -->
+        <div class="glass-card skill-category-card">
+          <div class="skill-category-header">
+            <div class="skill-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a8 8 0 0 0-8 8c0 3.37 2.1 6.25 5.06 7.4.4.16.64.55.64.98V20h4.6v-1.62c0-.43.24-.82.64-.98A8.003 8.003 0 0 0 12 2z"></path>
+                <line x1="9" y1="22" x2="15" y2="22"></line>
+              </svg>
+            </div>
+            <h3>AI, ML &amp; GenAI</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-pill highlighted">
+              <span class="skill-name">Artificial Intelligence</span>
+            </div>
+            <div class="skill-pill highlighted">
+              <span class="skill-name">Machine Learning</span>
+            </div>
+            <div class="skill-pill highlighted">
+              <span class="skill-name">Generative AI</span>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-name">LLMs &amp; Prompting</span>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-name">Computer Vision</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Databases & Core CS -->
+        <div class="glass-card skill-category-card">
+          <div class="skill-category-header">
+            <div class="skill-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+            </div>
+            <h3>Databases &amp; Core CS</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-pill highlighted">
+              <span class="skill-name">SQL</span>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-name">MySQL</span>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-name">Database Fundamentals</span>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-name">Data Structures &amp; Algorithms</span>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-name">OOP</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web Development -->
+        <div class="glass-card skill-category-card">
+          <div class="skill-category-header">
+            <div class="skill-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </div>
+            <h3>Web Development</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-pill">
+              <span class="skill-name">HTML</span>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-name">CSS</span>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-name">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools & Environments -->
+        <div class="glass-card skill-category-card">
+          <div class="skill-category-header">
+            <div class="skill-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+              </svg>
+            </div>
+            <h3>Tools &amp; Platforms</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-pill">
+              <span class="skill-name">Git</span>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-name">GitHub</span>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-name">PyCharm</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. PROJECTS SECTION -->
+    <section id="projects" class="section container">
+      <div class="section-header">
+        <span class="section-tag">Hands-on Work</span>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">
+          Separated clearly between implemented projects and exploratory research concepts.
+        </p>
+        <div class="section-divider"></div>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="completed">
+          <span class="status-indicator completed-dot"></span> Completed Projects
+        </button>
+        <button class="filter-btn" data-filter="concept">
+          <span class="status-indicator concept-dot"></span> Concepts &amp; Explorations
+        </button>
+      </div>
+
+      <div class="projects-grid">
+        
+        <!-- PROJECT 1: Mobile Phone Detection Alarm (Completed Project) -->
+        <article class="glass-card project-card" data-category="completed">
+          <div class="project-header">
+            <div class="project-badge-wrap">
+              <span class="project-status-badge completed-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Completed Project
+              </span>
+              <span class="project-domain-tag">Computer Vision &bull; AI</span>
+            </div>
+            <h3 class="project-title">Mobile Phone Detection Alarm</h3>
+          </div>
+
+          <p class="project-description">
+            An AI-powered computer vision detection project engineered to identify unauthorized mobile phone usage in restricted environments 
+            (such as exam halls, classrooms, or secure zones) and automatically trigger an instant alarm/alert notification.
+          </p>
+
+          <div class="project-highlights">
+            <h4 class="highlight-title">Key Highlights &amp; Scope:</h4>
+            <ul>
+              <li>Utilized computer vision techniques to detect mobile phone objects in video feeds.</li>
+              <li>Integrated an automated alarm triggering mechanism upon positive identification.</li>
+              <li>Demonstrates practical application of Python, image/frame processing, and AI detection.</li>
+            </ul>
+          </div>
+
+          <div class="project-tech-stack">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Computer Vision</span>
+            <span class="tech-tag">AI-based Applications</span>
+          </div>
+
+          <div class="project-card-footer">
+            <a href="https://github.com/bejawadanagavarshini007-code" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline project-link">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+              </svg>
+              <span>GitHub Repo</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- PROJECT 2: AI Chatbot for College Enquiry (Project Concept) -->
+        <article class="glass-card project-card" data-category="concept">
+          <div class="project-header">
+            <div class="project-badge-wrap">
+              <span class="project-status-badge concept-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="16" x2="12" y2="12"></line>
+                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+                Project Concept
+              </span>
+              <span class="project-domain-tag">Conversational AI &bull; NLP</span>
+            </div>
+            <h3 class="project-title">AI Chatbot for College Enquiry</h3>
+          </div>
+
+          <p class="project-description">
+            Explored an AI-powered conversational chatbot concept designed to answer frequent college enquiries and assist prospective and enrolled students 
+            in accessing campus information quickly and accurately.
+          </p>
+
+          <div class="project-highlights">
+            <h4 class="highlight-title">Key Explorations &amp; Concepts:</h4>
+            <ul>
+              <li>Conceptualized automated question-answering architecture using Python and AI principles.</li>
+              <li>Focused on reducing repetitive staff queries and delivering instant student assistance.</li>
+              <li>Investigated natural language query matching and college database integration.</li>
+            </ul>
+          </div>
+
+          <div class="project-tech-stack">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Artificial Intelligence</span>
+            <span class="tech-tag">Conversational AI</span>
+          </div>
+
+          <div class="project-card-footer">
+            <span class="concept-note">Exploratory Architecture &bull; Concept Study</span>
+          </div>
+        </article>
+
+        <!-- PROJECT 3: AI-Based Missing Object/Person Finder (Project Concept) -->
+        <article class="glass-card project-card" data-category="concept">
+          <div class="project-header">
+            <div class="project-badge-wrap">
+              <span class="project-status-badge concept-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="16" x2="12" y2="12"></line>
+                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+                Project Concept
+              </span>
+              <span class="project-domain-tag">FaceNet &bull; Cloud &bull; Vision</span>
+            </div>
+            <h3 class="project-title">AI-Based Missing Object/Person Finder</h3>
+          </div>
+
+          <p class="project-description">
+            Explored an architectural solution combining facial recognition, location data, and cloud databases to assist in locating 
+            missing persons or misplaced objects efficiently.
+          </p>
+
+          <div class="project-highlights">
+            <h4 class="highlight-title">Key Explorations &amp; Concepts:</h4>
+            <ul>
+              <li>Studied FaceNet deep learning architecture for robust facial feature extraction and matching.</li>
+              <li>Researched cloud database structures for scalable centralized record queries.</li>
+              <li>Explored integrating GPS/IoT location context to narrow down geographical search radiuses.</li>
+            </ul>
+          </div>
+
+          <div class="project-tech-stack">
+            <span class="tech-tag">FaceNet</span>
+            <span class="tech-tag">Computer Vision</span>
+            <span class="tech-tag">Cloud Database</span>
+            <span class="tech-tag">GPS/IoT Concepts</span>
+          </div>
+
+          <div class="project-card-footer">
+            <span class="concept-note">Research Architecture &bull; Concept Study</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 6. CERTIFICATIONS SECTION (Short & Factual) -->
+    <section id="certifications" class="section container">
+      <div class="section-header">
+        <span class="section-tag">Credentials</span>
+        <h2 class="section-title">Certifications &amp; Training</h2>
+        <p class="section-subtitle">
+          Verified technical training and course completions.
+        </p>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="certifications-grid">
+        
+        <!-- Cert 1: Calibo AI Academy -->
+        <div class="glass-card cert-card cert-featured">
+          <div class="cert-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+              <path d="M2 17l10 5 10-5"></path>
+              <path d="M2 12l10 5 10-5"></path>
+            </svg>
+          </div>
+          <div class="cert-content">
+            <div class="cert-issuer">Calibo AI Academy</div>
+            <h3 class="cert-title">AI and Technical Training</h3>
+            <p class="cert-desc">Hands-on technical training covering Artificial Intelligence and modern technical workflows.</p>
+          </div>
+          <div class="cert-badge">Featured Training</div>
+        </div>
+
+        <!-- Cert 2: MongoDB -->
+        <div class="glass-card cert-card">
+          <div class="cert-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+              <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+              <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+            </svg>
+          </div>
+          <div class="cert-content">
+            <div class="cert-issuer">MongoDB</div>
+            <h3 class="cert-title">MongoDB Certification / Course Completion</h3>
+            <p class="cert-desc">Database fundamentals, document models, and querying.</p>
+          </div>
+          <div class="cert-badge">Certified</div>
+        </div>
+
+        <!-- Cert 3: Hedera HCF -->
+        <div class="glass-card cert-card">
+          <div class="cert-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+          </div>
+          <div class="cert-content">
+            <div class="cert-issuer">Hedera</div>
+            <h3 class="cert-title">Hedera Certified Foundation (HCF)</h3>
+            <p class="cert-desc">Blockchain &amp; Distributed Ledger Technology (DLT) fundamentals.</p>
+          </div>
+          <div class="cert-badge">Certified</div>
+        </div>
+
+        <!-- Cert 4: Hedera HCDA -->
+        <div class="glass-card cert-card">
+          <div class="cert-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          </div>
+          <div class="cert-content">
+            <div class="cert-issuer">Hedera</div>
+            <h3 class="cert-title">Hedera Certified Developer Associate (HCDA)</h3>
+            <p class="cert-desc">Hedera network development, consensus service, and smart contract concepts.</p>
+          </div>
+          <div class="cert-badge">Certified</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. LEARNING JOURNEY SECTION -->
+    <section id="journey" class="section container">
+      <div class="section-header">
+        <span class="section-tag">Progression</span>
+        <h2 class="section-title">Learning Journey</h2>
+        <p class="section-subtitle">
+          How my technical foundation, AI specialization, and real-world project experience have evolved.
+        </p>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="timeline">
+        
+        <!-- Milestone 1: B.Tech CSE -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-meta">
+              <span class="timeline-stage">Academic</span>
+              <span class="timeline-date">Present</span>
+            </div>
+            <h3 class="timeline-title">B.Tech CSE</h3>
+            <p class="timeline-text">
+              Learning programming and building a strong foundation in Computer Science.
+            </p>
+          </div>
+        </div>
+
+        <!-- Milestone 2: Calibo AI Academy -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-meta">
+              <span class="timeline-stage">Specialized Training</span>
+              <span class="timeline-date">2026</span>
+            </div>
+            <h3 class="timeline-title">Calibo AI Academy</h3>
+            <p class="timeline-text">
+              Learning AI, LLMs, prompting and Generative AI.
+            </p>
+          </div>
+        </div>
+
+        <!-- Milestone 3: AI & ML -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-meta">
+              <span class="timeline-stage">Domain Focus</span>
+              <span class="timeline-date">Present</span>
+            </div>
+            <h3 class="timeline-title">AI &amp; ML</h3>
+            <p class="timeline-text">
+              Building basic knowledge of Artificial Intelligence, Machine Learning and Generative AI.
+            </p>
+          </div>
+        </div>
+
+        <!-- Milestone 4: Projects -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-meta">
+              <span class="timeline-stage">Hands-on Work</span>
+              <span class="timeline-date">Present</span>
+            </div>
+            <h3 class="timeline-title">Projects</h3>
+            <p class="timeline-text">
+              Applying what I learn through projects and practical work.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 8. CONTACT SECTION -->
+    <section id="contact" class="section container">
+      <div class="section-header">
+        <span class="section-tag">Let's Connect</span>
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-subtitle">
+          I am actively seeking software engineering internships and AI project collaborations. Feel free to reach out!
+        </p>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="contact-grid">
+        
+        <!-- Contact Info Cards -->
+        <div class="contact-details">
+          
+          <!-- Email Card -->
+          <div class="glass-card contact-info-card">
+            <div class="contact-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div class="contact-info-text">
+              <span class="contact-label">Email</span>
+              <a href="mailto:bejawadanagavarshini007@gmail.com" class="contact-value" id="emailText">bejawadanagavarshini007@gmail.com</a>
+            </div>
+            <button class="copy-btn" data-clipboard="bejawadanagavarshini007@gmail.com" title="Copy Email" aria-label="Copy Email to clipboard">
+              <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Phone Card -->
+          <div class="glass-card contact-info-card">
+            <div class="contact-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <div class="contact-info-text">
+              <span class="contact-label">Phone</span>
+              <a href="tel:9030079988" class="contact-value" id="phoneText">9030079988</a>
+            </div>
+            <button class="copy-btn" data-clipboard="9030079988" title="Copy Phone Number" aria-label="Copy Phone Number to clipboard">
+              <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Location Card -->
+          <div class="glass-card contact-info-card">
+            <div class="contact-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div class="contact-info-text">
+              <span class="contact-label">Location</span>
+              <span class="contact-value-static">Gudivada, Andhra Pradesh, India</span>
+            </div>
+          </div>
+
+          <!-- Social Buttons Card -->
+          <div class="glass-card contact-social-card">
+            <span class="contact-label">Profiles &amp; Code:</span>
+            <div class="social-btn-row">
+              <a href="https://linkedin.com/in/naga-varshini-bejawada-196a2934b" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline social-row-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.6 1.6 0 1 0 0-3.2 1.6 1.6 0 0 0 0 3.2m1.4 9.74v-8.37H5.06v8.37h2.8z"/>
+                </svg>
+                <span>LinkedIn Profile</span>
+              </a>
+
+              <a href="https://github.com/bejawadanagavarshini007-code" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline social-row-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+                <span>GitHub Profile</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Interactive Contact Form -->
+        <div class="glass-card contact-form-card">
+          <h3 class="form-title">Send a Direct Message</h3>
+          <p class="form-subtitle">Have an opportunity or question? Feel free to write to me.</p>
+
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="senderName">Your Name</label>
+              <input type="text" id="senderName" name="name" placeholder="e.g. Alex Smith" required />
+            </div>
+
+            <div class="form-group">
+              <label for="senderEmail">Your Email</label>
+              <input type="email" id="senderEmail" name="email" placeholder="e.g. alex@example.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="senderSubject">Subject</label>
+              <input type="text" id="senderSubject" name="subject" placeholder="e.g. Internship Opportunity / Collaboration" required />
+            </div>
+
+            <div class="form-group">
+              <label for="senderMessage">Message</label>
+              <textarea id="senderMessage" name="message" rows="4" placeholder="Hello Varshini, I came across your portfolio..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit-btn">
+              <span>Send Message</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+          <div id="formStatus" class="form-status-message" aria-live="polite"></div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <div class="footer-brand">
+          <span class="brand-monogram">NV</span>
+          <span class="brand-text">Bejawada Naga Varshini</span>
+        </div>
+        <p class="footer-copy">
+          Computer Science &amp; Engineering Student &bull; Dhanekula Institute of Engineering and Technology.
+        </p>
+      </div>
+
+      <div class="footer-right">
+        <ul class="footer-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="footer-bottom-text">
+          &copy; 2026 Bejawada Naga Varshini. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top" title="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Toast Notification for Copy Action -->
+  <div id="toast" class="toast" role="alert" aria-live="assertive"></div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
